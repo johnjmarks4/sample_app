@@ -17,7 +17,23 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
+  end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(user_params)
+
+      # 06/25/17 Flash not working
+
+      flash[:success] = "Profile Updated!"
+      redirect_to @user, :flash => { :success => "Profile Updated" }
+    else
+      render 'edit'
+    end
   end
 
 
