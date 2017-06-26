@@ -28,14 +28,15 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 #jQuery required for Bootstrap
 gem 'jquery-rails'
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.7'
+# Use faker to generate fake users
+gem 'faker', '1.7.3'
+# Pagination
+gem 'will_paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
