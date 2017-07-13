@@ -24,3 +24,6 @@
 
 .DS_Store
 spring/
+
+# Ignore uploaded test images
+/public/uploads
